@@ -1,1 +1,312 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background: #f4f4f4;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #1a1a1a;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.hero-link {
+  margin-top: 20px;
+  display: inline-block;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero-image {
+  width: 40%;
+  background-image: url('https://www.cgi.com/themes/custom/cgi_base/img/brain-pattern.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* for 3 columns */
+.columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 60px;
+  background: white;
+}
+
+.column {
+  width: 32%;
+}
+
+.column h2 {
+  color: #4a2e8a;
+}
+
+.column p {
+  margin: 10px 0 20px;
+  color: #444;
+}
+
+.tags span {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.column-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* NAVBAR CGI */
+.cgi-navbar {
+  width: 100%;
+  height: 70px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+/* Left section */
+.cgi-navbar .left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Navbar links */
+.cgi-navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.cgi-navbar a:hover {
+  color: #b80000;
+}
+
+/* Right section */
+.cgi-navbar .right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.cgi-navbar .icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .cgi-navbar {
+    padding: 0 20px;
+  }
+  .cgi-navbar .left a,
+  .cgi-navbar .right a {
+    display: none;
+  }
+}
+
+/* VIDEO SECTION */
+.video-section {
+  display: flex;
+  background: #f3f0fa;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.video-left {
+  width: 40%;
+  padding: 40px;
+}
+
+.video-left h1 {
+  font-size: 48px;
+  color: #371b7c;
+}
+
+.video-logo img {
+  margin-top: 30px;
+  width: 120px;
+}
+
+.video-right {
+  width: 55%;
+  border-left: 8px solid transparent;
+  border-image: linear-gradient(to bottom, #d9003d, #5a1bb3) 1;
+}
+
+.video-right iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 6px;
+}
+
+
+
+/* FOOTER */
+.cgi-footer {
+  background: #ffffff;
+  margin-top: 40px;
+}
+
+.footer-banner {
+  background: linear-gradient(to right, #d6002a, #5a1bb3);
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer-banner h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.footer-banner button {
+  background: white;
+  color: #4b1ca1;
+  padding: 12px 28px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* FOOTER COLUMNS */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  background: #f7f7f7;
+}
+
+.footer-column {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  font-size: 40px;
+  color: #d6002a;
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  font-size: 15px;
+  color: #555;
+}
+
+.footer-link {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+.footer-copy {
+  margin-top: 20px;
+  color: #777;
+  font-size: 14px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.footer-column a {
+  margin: 3px 0;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subscribe-btn {
+  background: #5a1bb3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.social-icons span {
+  margin-right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.cgi-text-logo {
+  font-size: 38px;
+  font-weight: 700;
+  color: #d6002a;
+  font-family: Arial, sans-serif;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 26px;
+  height: 26px;
+  filter: invert(15%);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.social-icons img:hover {
+  filter: invert(10%) sepia(100%) saturate(5000%) hue-rotate(-10deg);
+  transform: scale(1.1);
+}
+
+.cgi-text-logo {
+  font-size: 40px !important;
+  font-weight: 700 !important;
+  color: #d6002a !important;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none !important;
+  margin-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+

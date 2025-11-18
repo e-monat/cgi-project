@@ -1,0 +1,26 @@
+<section class="subscribe-form">
+
+  <h2>Subscribe</h2>
+  <p>Fill in the form to subscribe to our newsletter.</p>
+
+  <form (submit)="onSubmit($event)">
+
+    <label>First name</label>
+    <input type="text" [(ngModel)]="firstName" name="firstName" required />
+
+    <label>Last name</label>
+    <input type="text" [(ngModel)]="lastName" name="lastName" required />
+
+    <label>Email</label>
+    <input type="email" [(ngModel)]="email" name="email" required />
+
+    <button type="submit">Save</button>
+  </form>
+
+  <!-- TOAST -->
+  <div class="toast" *ngIf="showToast">
+    Your email has been successfully registered!
+  </div>
+
+</section>
+
